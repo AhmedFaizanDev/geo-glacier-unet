@@ -1,0 +1,39 @@
+name: geo-mlvis
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  # Deep learning (GPU-ready). For CPU-only, you may remove pytorch-cuda.
+  - pytorch>=2.0
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  # Geospatial stack
+  - gdal
+  - rasterio
+  - rioxarray
+  - xarray
+  - shapely
+  - fiona
+  - geopandas
+  - pyproj
+  # Imaging, data, and utils
+  - scikit-image
+  - opencv
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - tqdm
+  - scikit-learn
+  - python-dotenv
+  - jupyterlab
+  - ipykernel
+  - pip:
+      - tifffile
+      - rich
+
